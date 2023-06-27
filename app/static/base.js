@@ -21,9 +21,7 @@ function styleit(){
 
 fetch('/productdata')
   .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    
+  .then(data => {    
     myFunction(data);
   })
   .catch(error => {

@@ -26,31 +26,3 @@ class Analyzer():
         with open('./charts/data.json', 'w') as jf:
             json.dump([self.recco, self.score],jf, indent=4, ensure_ascii=False)
 
-
-
-
-
-    # def making_graphs(self):
-    #     self.recommendations.plot.pie(label="", 
-    #                     labels = ["Recommend", "Not recommend", "neutural"],
-    #                     title="Recommentations:",  
-    #                     colors=['#22DE00', '#E25A5A', '#CDCCE3'], 
-    #                     fontsize=9,
-    #                     autopct= lambda p: '{:.1f}%'.format(round(p)) if p > 0 else '')
-
-
-    #     plt.savefig(f"./charts/{self.product_id}_pie.png")
-    #     plt.close()
-
-
-    #     self.stars.plot.bar(color= "lightblue")
-    #     plt.ylim(0, max(self.stars)+10)
-    #     plt.title("Star count distribution")
-    #     plt.xlabel("number of stars")
-    #     plt.ylabel("Number of opinions")
-    #     plt.xticks(rotation = 0)
-    #     plt.grid(True, "major", "y")
-    #     for index, value in enumerate(self.stars):
-    #         plt.text(index, value+1.5, str(value), ha = 'center')
-    #     plt.savefig(f"./charts/{self.product_id}_bar.png")
-    #     plt.close()
